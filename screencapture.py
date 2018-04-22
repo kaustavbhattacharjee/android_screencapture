@@ -6,7 +6,7 @@ for i in range(1,pages):
     subprocess.run([adb_path,"shell","screencap","/sdcard/myimage.png"])
     subprocess.run([adb_path,"pull","/sdcard/myimage.png"])
     os.system("cp myimage.png "+str(i)+".png")
-    subprocess.run([adb_path, "shell", "input", "swipe", "530", "1919", "530", "1080"])
+    subprocess.run([adb_path, "shell", "input", "swipe", "530", "1819", "530", "1080"])
     time.sleep(3)
     printed=i
 os.system("rm myimage.png")
